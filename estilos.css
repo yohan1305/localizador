@@ -1,0 +1,182 @@
+/* Estilo para la clase .cuerpo */
+.cuerpo {
+    text-align: center;
+    border: 3px solid rgb(97, 38, 235); /* Corregido el color del borde */
+    width: 793px;
+    height: 1195px;
+    font-size: 33px;
+    float: right;
+    overflow: hidden;
+}
+
+/* Estilo para la clase .indice */
+.indice {
+    text-align: center;
+    width: 1200px; /* Corregido el ancho */
+    color: black;
+    border: 2px solid #000; /* Corregido el borde */
+    background-color: #6c71ac; /* Color de fondo del cuadro */
+    padding: 20px; /* Espacio interno entre el contenido y el borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra del cuadro */
+    font-size: 22px;
+    text-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+}
+
+/* Estilo para la clase .fondo */
+.fondo {
+    text-decoration: dotted;
+    background-color: rgba(3, 0, 95, 0.902); /* Color de fondo */
+    color: aliceblue; /* Color del texto */
+    border: 8px solid #ffffff; /* Borde de 8px, sólido, color blanco */
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento y opacidad */
+    text-shadow: 50px 15px 10px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+    opacity: 0.9; /* 90% opaco */
+    font-size: 24px; /* Tamaño de la fuente */
+}
+
+/* Estilo para la clase .contenido */
+.contenido {
+    border: 2px solid black;
+    width: 440px;
+    height: 1500px; /* Corregido el alto */
+    margin-right: auto;
+    float: left;
+    font-size: 18px;
+    background-color: rgba(232, 225, 225, 0.936);
+}
+
+/* Estilo para las tablas y celdas */
+table, td, th {
+    border: 1px solid black;
+    margin: 0 auto;
+    height: 95px;
+    width: 400px;
+    font-size: 24px;
+}
+
+/* Estilo para el texto grande */
+.textogrande {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Estilo para las imágenes */
+.imagenes123 {
+    display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+    padding: 8px; /* Espacio entre la imagen y el borde */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente */
+    border: 10px solid rgba(0, 0, 0, 0.1); /* Borde semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto de profundidad */
+    white-space: 10px; /* Corregido el valor */
+}
+
+/* Estilo para el texto pequeño */
+.pequeno {
+    font-size: 0.3em; /* Reduce el tamaño del texto dentro del span */
+    vertical-align: middle; /* Alinea verticalmente el símbolo */
+    position: relative;
+    top: 5px; /* Ajusta la posición vertical del símbolo */
+}
+
+/* Animación para desvanecer y deslizar hacia arriba */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica la animación a todo el cuerpo de la página */
+body {
+    animation: fadeInSlideUp 5s ease-in-out;
+}
+
+/* Animación para el fondo en movimiento */
+@keyframes slideBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* Estilo para la clase .lakabra */
+.lakabra {
+    float: left;
+    color: black;
+    text-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+}
+
+/* Estilo para la clase .tato */
+.tato {
+    font-size: 30px; /* Corregido el tamaño de fuente */
+    color: rgb(8, 1, 1);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Estilo para el contenedor de videos */
+.videos-videos {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo para la galería de videos */
+.video-gallery {
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: grid; /* Utiliza Grid Layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo para cada item de video */
+.video-item {
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilo para el hover en los items de video */
+.video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el video dentro de cada item */
+.video-item video {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor padre */
+    height: 200px; /* Ajusta la altura del video */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta el contenido si es necesario */
+}
+
+/* Estilo para el texto dentro de cada item de video */
+.video-item p {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    background-color: #ffffff;
+}
