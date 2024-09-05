@@ -180,3 +180,54 @@ body {
     font-size: 16px;
     background-color: #ffffff;
 }
+
+
+/* Estilos para celulares/*
+
+/* Estilos generales */
+body {
+    animation: fadeInSlideUp 5s ease-in-out;
+    font-size: 16px; /* Asegúrate de tener un tamaño base de fuente */
+}
+
+/* Media query para pantallas menores a 600px (móviles) */
+@media (max-width: 600px) {
+    .cuerpo {
+        width: 100%; /* Ajusta el ancho al 100% */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        font-size: 20px; /* Reduce el tamaño de fuente */
+        float: none; /* Evita el uso de float */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+
+    .indice {
+        width: 100%; /* Ajusta el ancho al 100% */
+        font-size: 18px; /* Reduce el tamaño de fuente */
+    }
+
+    .contenido {
+        width: 100%; /* Ajusta el ancho al 100% */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        font-size: 16px; /* Reduce el tamaño de fuente */
+    }
+
+    .imagenes123 {
+        width: 100%; /* Ajusta el ancho al 100% */
+        padding: 5px; /* Ajusta el padding */
+    }
+
+    table, td, th {
+        width: 100%; /* Ajusta el ancho de la tabla al 100% */
+        font-size: 20px; /* Reduce el tamaño de fuente */
+    }
+
+    .video-gallery {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    }
+
+    .video-item {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    /* Ajusta cualquier otro contenedor o texto que sea necesario */
+}
