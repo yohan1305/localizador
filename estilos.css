@@ -188,7 +188,7 @@ body {
 
 
 /* Media query para pantallas menores a 600px (móviles) */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
 
     /* Ajustes generales */
     body {
