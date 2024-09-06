@@ -185,13 +185,7 @@ body {
 /* Estilos para celulares/*
 
 * Estilos generales */
-body {
-    font-size: 16px; /* Asegúrate de tener un tamaño base de fuente */
-    animation: fadeInSlideUp 5s ease-in-out;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Media query para pantallas menores a 600px (móviles) */
 @media (max-width: 600px) {
