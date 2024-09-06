@@ -184,31 +184,46 @@ body {
 
 /* Estilos para celulares/*
 
-/* Estilos generales */
+* Estilos generales */
 body {
-    animation: fadeInSlideUp 5s ease-in-out;
     font-size: 16px; /* Asegúrate de tener un tamaño base de fuente */
+    animation: fadeInSlideUp 5s ease-in-out;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Media query para pantallas menores a 600px (móviles) */
 @media (max-width: 600px) {
+
+    /* Ajustes generales */
+    body {
+        font-size: 14px; /* Reduce el tamaño base de la fuente en móviles */
+    }
+
     .cuerpo {
         width: 100%; /* Ajusta el ancho al 100% */
         height: auto; /* Permite que la altura se ajuste automáticamente */
         font-size: 20px; /* Reduce el tamaño de fuente */
         float: none; /* Evita el uso de float */
         margin: 0 auto; /* Centra el contenedor */
+        padding: 10px; /* Añade padding para mejorar el espaciado */
     }
 
     .indice {
         width: 100%; /* Ajusta el ancho al 100% */
         font-size: 18px; /* Reduce el tamaño de fuente */
+        margin: 0 auto; /* Centra el contenido */
+        padding: 10px; /* Añade más espacio interno */
     }
 
     .contenido {
         width: 100%; /* Ajusta el ancho al 100% */
         height: auto; /* Permite que la altura se ajuste automáticamente */
         font-size: 16px; /* Reduce el tamaño de fuente */
+        padding: 10px; /* Añade padding */
+        float: none; /* Elimina el float para que ocupe todo el ancho */
+        margin-bottom: 20px; /* Añade espacio entre las secciones */
     }
 
     .imagenes123 {
@@ -218,16 +233,25 @@ body {
 
     table, td, th {
         width: 100%; /* Ajusta el ancho de la tabla al 100% */
-        font-size: 20px; /* Reduce el tamaño de fuente */
+        font-size: 18px; /* Reduce el tamaño de fuente */
+        margin: 10px 0; /* Añade espacio vertical */
     }
 
     .video-gallery {
         grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+        gap: 10px; /* Reduce el espacio entre los elementos */
     }
 
     .video-item {
         height: auto; /* Permite que la altura se ajuste automáticamente */
     }
 
-    /* Ajusta cualquier otro contenedor o texto que sea necesario */
+    /* Ajustes adicionales si es necesario */
+    .lakabra, .tato {
+        font-size: 16px; /* Ajusta el tamaño de fuente en móviles */
+    }
+
+    .imagenes123 {
+        margin: 0 auto; /* Centra las imágenes en móviles */
+    }
 }
